@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+import { render } from 'react-dom';
 import './styles/reset.css';
 import './styles/index.scss';
 
 import AppRouter from 'pages/Router';
 
-ReactDOM.render(
-	<React.StrictMode>
+render(
+	<StrictMode>
 		<AppRouter />
-	</React.StrictMode>,
+	</StrictMode>,
 	document.getElementById('root')
 );
